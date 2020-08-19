@@ -16,19 +16,18 @@
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
       rel="stylesheet"
     />
+    <script src="main.js" defer></script>
 
     <title>Frontend Mentor | Base Apparel coming soon page</title>
   </head>
   <body>
-    <!--  Email Address -->
-
     <div class="container">
       <div class="logo">
         <img src="images/logo.svg" alt="Base Apparel Logo" />
       </div>
 
       <div class="hero-image">
-        <img src="images/hero-mobile.jpg" alt="Hero image" />
+        <img class="hero" alt="Hero image" />
       </div>
 
       <div class="content">
@@ -46,13 +45,24 @@
 
         <form action="#" class="form" id="register-form" novalidate>
           <div class="input-form">
-            <input type="text" aria-label="Email Address" placeholder="Email Address">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              aria-label="Email Address"
+              placeholder="Email Address"
+              required
+            />
+            <i class="fa fa-exclamation-circle"></i>
+            <p class="message">Please provide a valid email</p>
           </div>
-          <button type="submit" class="btn-submit" id="btn-submit">E</button>
-
+          <button type="submit" class="btn-submit" id="btn-submit">
+            <img src="images/icon-arrow.svg" alt="New Document" />
+          </button>
         </form>
       </div>
 
+    </div>
       <footer>
         <p class="attribution">
           Challenge by
@@ -61,6 +71,5 @@
           >. Coded by <a href="#">NI1GHTMARE</a>.
         </p>
       </footer>
-    </div>
   </body>
 </html>
