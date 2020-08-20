@@ -129,6 +129,14 @@ input:focus {
   /* border: 1px solid blue; */
 }
 
+.btn-submit:focus {
+  outline: none;
+}
+
+.btn-submit:hover{
+  cursor: pointer;
+}
+
 .fa {
   display: none;
   align-self: flex-end;
