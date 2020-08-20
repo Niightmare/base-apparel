@@ -107,6 +107,11 @@ input::placeholder {
   color: var(--Desaturated-Red);
 }
 
+input:focus {
+  outline: none;
+  border: 2px solid hsl(0, 36%, 70%);
+}
+
 .btn-submit {
   align-self: flex-end;
   position: absolute;
@@ -193,6 +198,10 @@ footer {
 }
 
 @media screen and (min-width: 1024px) {
+  body {
+      height: 100%;
+  }
+
   .container {
     flex-direction: initial;
   }
