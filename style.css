@@ -22,38 +22,35 @@ body {
     hsl(0, 0%, 100%),
     hsl(0, 100%, 98%)
   );
-  border: 1px solid orange;
+  /* border: 1px solid orange; */
 }
 
 .container {
   display: inherit;
   flex-direction: column;
   flex: 1 0 auto;
-  border: 2px dotted red;
+  /* border: 2px dotted red; */
 }
 
 .logo {
   padding: 35px 20px 35px 40px;
-  border: 2px solid dodgerblue;
+  /* border: 2px solid dodgerblue; */
 }
 
 .logo img {
   width: 7.5rem;
-  /* object-fit: cover; */
   /* border: 1px solid fuchsia; */
 }
 
 .hero-image {
   display: flex;
-  border: 2px solid darkcyan;
-}
-
-.hero-image img {
-  max-width: 100%;
+  /* border: 2px solid darkcyan; */
 }
 
 .hero {
+  max-width: 100%;
   content: url("images/hero-mobile.jpg");
+  /* border: 2px dotted fuchsia; */
 }
 
 .content {
@@ -63,7 +60,7 @@ body {
   text-align: center;
   color: var(--Desaturated-Red);
   padding: 30px;
-  border: 2px solid dodgerblue;
+  /* border: 1px solid red; */
 }
 
 .content h2 {
@@ -167,7 +164,7 @@ footer {
   flex-shrink: 0;
   padding: 5px;
   background-color: rgba(185, 182, 211, 0.4);
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 
 .attribution {
@@ -181,7 +178,7 @@ footer {
 
 @media screen and (min-width: 376px) {
   body {
-    background-image: url("../images/bg-pattern-desktop.svg");
+    background-image: url("images/bg-pattern-desktop.svg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
@@ -203,6 +200,7 @@ footer {
   .logo {
     position: absolute;
     margin: 7em 0 0 4em;
+    padding: 0;
   }
 
   .hero-image {
@@ -228,7 +226,7 @@ footer {
   }
 
   .message-error {
-    margin-top: 0!important;
+    margin-top: 0 !important;
     padding-top: 0.5em;
   }
 }
@@ -245,7 +243,7 @@ footer {
   }
 
   .logo {
-    margin: 7em 0 0 5em;
+    margin: 5em 0 0 5em;
   }
 }
 
@@ -255,7 +253,7 @@ footer {
   }
 
   .logo {
-    margin: 7em 0 0 8em;
+    margin: 5em 0 0 8em;
   }
 }
 
