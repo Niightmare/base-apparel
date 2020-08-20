@@ -9,8 +9,7 @@
 html,
 body {
   margin: 0;
-  /* height: 100%; */
-  /* min-height: 100vh; */
+  min-height: 100vh;
 }
 
 body {
@@ -23,7 +22,7 @@ body {
     hsl(0, 0%, 100%),
     hsl(0, 100%, 98%)
   );
-  /* border: 1px solid orange; */
+  border: 1px solid orange;
 }
 
 .container {
@@ -40,13 +39,12 @@ body {
 
 .logo img {
   width: 7.5rem;
-  object-fit: cover;
+  /* object-fit: cover; */
   /* border: 1px solid fuchsia; */
 }
 
 .hero-image {
   display: flex;
-  /* flex-wrap: wrap; */
   border: 2px solid darkcyan;
 }
 
@@ -73,7 +71,7 @@ body {
   letter-spacing: 13px;
   text-transform: uppercase;
   font-weight: 300;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 
 .content h2 strong {
@@ -89,7 +87,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: 20px 0;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .input-form {
@@ -152,7 +150,7 @@ input::placeholder {
   margin-top: 0;
   color: var(--Soft-Red);
   font-size: 13px;
-  padding-left: 1.7em;
+  padding-left: 2em;
   padding-top: 0.5em;
 }
 
@@ -186,6 +184,7 @@ footer {
     background-image: url("../images/bg-pattern-desktop.svg");
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100%;
   }
 }
 
@@ -203,6 +202,7 @@ footer {
 
   .logo {
     position: absolute;
+    margin: 7em 0 0 4em;
   }
 
   .hero-image {
@@ -224,7 +224,12 @@ footer {
 
   .content p {
     text-align: start;
-    border: 1px solid blue;
+    margin-top: -1em;
+  }
+
+  .message-error {
+    margin-top: 0!important;
+    padding-top: 0.5em;
   }
 }
 
@@ -238,11 +243,24 @@ footer {
   .content {
     padding: 15em 5em 5em 5em;
   }
+
+  .logo {
+    margin: 7em 0 0 5em;
+  }
 }
 
 @media screen and (min-width: 1220px) {
   .content {
     padding: 15em 10em 5em 8em;
-    /* padding: 15em 5em 5em 5em; */
+  }
+
+  .logo {
+    margin: 7em 0 0 8em;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .content p {
+    padding: 0px 55px 0px 0;
   }
 }
