@@ -100,35 +100,13 @@ A massive thank you to our community sponsors!
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="style.css" />
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> -->
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"> -->
 
     <title>Frontend Mentor | Fylo landing page with two column layout</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
-    <!-- Features Team Sign In 
-      All your files in one secure location, accessible anywhere. 
+    <!-- 
     
-    Fylo stores your most important files in one secure location.
-    Access them wherever you need, share and collaborate with friends, family,
-    and co-workers.
-    
-    Get Started 
-    
-    Stay productive, wherever you are 
-    
-    Never let location be an issue when accessing your files. Fylo has you covered for all
-    of your file storage needs. Securely share files and folders with friends,
-    family and colleagues for live collaboration. No email attachments required!
-
-    See how Fylo works Fylo has improved our team productivity by an order of
-    magnitude. Since making the switch our team has become a well-oiled
-    collaboration machine. Kyle Burton Founder & CEO, Huddle Get early access
-    today It only takes a minute to sign up and our free starter tier is
-    extremely generous. If you have any questions, our support team would be
-    happy to help you. Get Started For Free Phone: +1-543-123-4567
+    Get Started For Free Phone: +1-543-123-4567
     example@fylo.com About Us Jobs Press Blog Contact Us Terms Privacy -->
     <div class="container">
       <nav class="navbar sticky">
@@ -142,8 +120,8 @@ A massive thank you to our community sponsors!
         </div>
       </nav>
 
-      <div class="get_started">
-        <div class="content">
+      <div class="content">
+        <div class="left-content">
           <h1>
             All your files in one secure <br />location, accessible anywhere.
           </h1>
@@ -157,10 +135,79 @@ A massive thank you to our community sponsors!
             <input
               type="email"
               name="email"
-              placeholder="Enter your emial"
+              placeholder="Enter your email"
               aria-label="Email input"
             />
-            <button>Get Started</button>
+            <button class="btn btn-blue">Get Started</button>
+          </div>
+        </div>
+        <div class="right-content">
+          <img src="images/illustration-1.svg" alt="Illustration 1" />
+        </div>
+      </div>
+
+      <div class="content curve"></div>
+      <div class="content content-shadow">
+        <div class="left-content">
+          <h1>Stay productive, wherever you are</h1>
+          <p>
+            Never let location be an issue when accessing your files. Fylo has
+            you <br />covered for all of your file storage needs.
+          </p>
+          <p>
+            Securely share files and folders with friends, family and colleagues
+            for<br />
+            live collaboration. No email attachments required!
+          </p>
+          <a href="#">
+            See how Fylo works
+            <img src="images/icon-arrow.svg" alt="Next" />
+          </a>
+
+          <div class="testimonial-card">
+            <img src="images/icon-quotes.svg" alt="quotes" />
+            <p>
+              Fylo has improved our team productivity by <br />an order of
+              magnitude. Since making the <br />switch our team has become a
+              well-oiled<br />
+              collaboration machine.
+            </p>
+            <div class="profile">
+              <img
+                src="images/avatar-testimonial.jpg"
+                alt="avatar photo"
+                class="avatar"
+              />
+              <div class="profile-data">
+                <span class="profile-name">Kyle Burton</span>
+                <span class="profile-company">Founder & CEO, Huddle</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right-content">
+          <img src="images/illustration-2.svg" alt="Illustration 1" />
+        </div>
+      </div>
+
+      <div class="content early-access">
+        <div class="left-content">
+          <h1>Get early access today</h1>
+          <p>
+            It only takes a minute to sign up and our free starter tier is<br />
+            extremely generous. If you have any questions, our support team<br />
+            would be happy to help you.
+          </p>
+        </div>
+        <div class="right-content">
+          <div class="input-form">
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter your email"
+              aria-label="Email input"
+            />
+            <button class="btn btn-blue">Get Started</button>
           </div>
         </div>
       </div>
@@ -179,7 +226,8 @@ A massive thank you to our community sponsors!
 
 
 
-@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
 :root {
@@ -197,13 +245,12 @@ body {
   padding: 0;
 }
 
-/* font-family: 'Open Sans', sans-serif; */
 body {
-  font-family: "Raleway", sans-serif;
-  /* display: flex;
-  flex-direction: column; */
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
   color: var(--Very-Dark-Blue);
-  /* background-image: url('images/bg-curve-desktop.svg'); */
 }
 
 .container {
@@ -218,16 +265,17 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 2em 2em 1em 2em;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
-.logo {
+/* .logo {
   border: 1px solid red;
-}
+} */
 
 .menu {
+  font-family: "Raleway", sans-serif;
   margin-right: 1.5em;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .menu a {
@@ -237,52 +285,156 @@ body {
   /* border: 1px solid blue; */
 }
 
-.get_started {
-  border: 1px solid darkcyan;
+.content {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
-  padding: 2em 2em 1em 4.5em;
-  /* background-image: url('images/illustration-1.svg'); */
+  padding: 2em 4.5em 5em 4.5em;
+  border: 1px solid fuchsia;
 }
 
-.content {
+.left-content {
   display: inherit;
   flex-direction: column;
-  /* border: 1px solid blue; */
+  justify-content: center;
+  border: 1px solid blue;
 }
 
-.content > h1 {
-  border: 1px solid darkcyan;
+.left-content > h1 {
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
+  line-height: 1.5em;
+  /* border: 1px solid darkcyan; */
 }
 
-.content > p {
-    border: 1px solid darkcyan;
+h1, p {
+  border: 1px solid lawngreen;
 }
 
-.input-form{
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid darkcyan;
+.left-content > a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--Moderate-Cyan);
+  text-decoration-line: none;
+  width: 10.5em;
+  padding-bottom: 5px;
+  border-bottom: 1px solid hsl(170, 45%, 43%);
 }
 
-.input-form > input{
-    padding: 1em 2em;
-    border-radius: 5px;
-    border: 1px solid hsl(238, 22%, 44%);
+.input-form {
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid darkcyan; */
 }
 
+.input-form > input {
+  padding: 1em 2em;
+  border-radius: 3px;
+  width: 16em;
+  border: 1px solid hsl(238, 22%, 44%);
+}
+
+.btn {
+  font-family: "Raleway", sans-serif;
+  width: 16em;
+  border-radius: 3px;
+  background-color: var(--Bright-Blue);
+  color: white;
+  border: none;
+  box-shadow: 0px 3px 10px 1px hsl(0, 0%, 75%);
+}
+
+.right-content {
+  display: flex;
+  flex: 50%;
+  justify-content: center;
+  border: 1px solid darkcyan;
+}
+
+.right-content > img {
+  max-width: 85%;
+  margin: 70px auto;
+  /* border: 1px solid red; */
+}
+
+.curve {
+  background: url("images/bg-curve-desktop.svg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.content-shadow {
+  /* background: url("images/bg-curve-desktop.svg") no-repeat; */
+  background-color: var(--Light-Grayish-Blue);
+  background-size: cover;
+  background-position: center;
+}
+
+.testimonial-card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 70%;
+  background-color: white;
+  margin-top: 3em;
+  border-radius: 5px;
+  padding: 1.5em 2em;
+  box-shadow: 0px 0px 10px 8px hsl(0, 0%, 75%, 0.3);
+  /* border: 1px solid red; */
+}
+
+.testimonial-card > img {
+  height: 1em;
+  align-self: flex-start;
+  /* border: 1px solid darkcyan; */
+}
+
+.profile {
+  display: inherit;
+  /* border: 1px solid darkcyan; */
+}
+
+.avatar {
+  height: 2.5em;
+  width: 2.5em;
+  border-radius: 150px;
+  margin-right: 20px;
+  /* border: 1px solid red; */
+}
+
+.profile-data {
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  flex-direction: column;
+  /* border: 1px solid grey; */
+}
+
+.profile-name {
+  font-weight: bold;
+  /* border: 1px solid grey; */
+}
+
+.profile-company {
+  font-size: 11px;
+  /* border: 1px solid grey; */
+}
+
+.early-access {
+  background-color: var(--Desaturated-Blue);
+  color: white;
+}
 
 
 footer {
-  text-align: center;
   padding: 5px;
   background-color: rgba(185, 182, 211, 0.4);
-  /* border: 1px solid blue; */
 }
 
 .attribution {
-  font-size: 11px;
+  font-size: 12px;
   text-align: center;
 }
 
