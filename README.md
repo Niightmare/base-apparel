@@ -101,18 +101,20 @@ A massive thank you to our community sponsors!
     />
     <link rel="stylesheet" href="style.css" />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+
     <title>Frontend Mentor | Fylo landing page with two column layout</title>
   </head>
   <body>
-    <!-- 
-    
-    Get Started For Free Phone: +1-543-123-4567
-    example@fylo.com About Us Jobs Press Blog Contact Us Terms Privacy -->
     <div class="container">
       <nav class="navbar sticky">
-        <figure class="logo">
+        <div class="logo">
           <a href="#"><img src="images/logo.svg" alt="Fylo logo" /></a>
-        </figure>
+        </div>
+
         <div class="menu">
           <a href="#">Features</a>
           <a href="#">Team</a>
@@ -123,19 +125,19 @@ A massive thank you to our community sponsors!
       <div class="content">
         <div class="left-content">
           <h1>
-            All your files in one secure <br />location, accessible anywhere.
+            All your files in one secure location, accessible anywhere.
           </h1>
           <p>
-            Fylo stores your most important files in one secure location. Access
-            <br />them wherever you need, share and collaborate with friends,
-            family,<br />
+            Fylo stores your most important files in one secure location.
+            Access<br />
+            them wherever you need, share and collaborate with friends, family,
             and co-workers.
           </p>
           <div class="input-form">
             <input
               type="email"
               name="email"
-              placeholder="Enter your email"
+              placeholder="Enter your email..."
               aria-label="Email input"
             />
             <button class="btn btn-blue">Get Started</button>
@@ -149,15 +151,17 @@ A massive thank you to our community sponsors!
       <div class="content curve"></div>
       <div class="content content-shadow">
         <div class="left-content">
-          <h1>Stay productive, wherever you are</h1>
+          <h1>
+            Say productive, wherever you are
+          </h1>
           <p>
-            Never let location be an issue when accessing your files. Fylo has
-            you <br />covered for all of your file storage needs.
+            Never let location be an issue when accessing your files. Fylo
+            has<br />
+            you covered for all of your file storage needs.
           </p>
           <p>
             Securely share files and folders with friends, family and colleagues
-            for<br />
-            live collaboration. No email attachments required!
+            for <br />live collaboration. No email attachments required!
           </p>
           <a href="#">
             See how Fylo works
@@ -167,9 +171,8 @@ A massive thank you to our community sponsors!
           <div class="testimonial-card">
             <img src="images/icon-quotes.svg" alt="quotes" />
             <p>
-              Fylo has improved our team productivity by <br />an order of
-              magnitude. Since making the <br />switch our team has become a
-              well-oiled<br />
+              Fylo has improved our team productivity by an order of magnitude.
+              Since making the switch our team has become a well-oiled
               collaboration machine.
             </p>
             <div class="profile">
@@ -186,7 +189,7 @@ A massive thank you to our community sponsors!
           </div>
         </div>
         <div class="right-content">
-          <img src="images/illustration-2.svg" alt="Illustration 1" />
+          <img src="images/illustration-2.svg" alt="Illustration 2" />
         </div>
       </div>
 
@@ -194,35 +197,474 @@ A massive thank you to our community sponsors!
         <div class="left-content">
           <h1>Get early access today</h1>
           <p>
-            It only takes a minute to sign up and our free starter tier is<br />
-            extremely generous. If you have any questions, our support team<br />
+            It only takes a minute to sign up and our free starter tier is
+            extremely generous. If you have any questions, our support team
             would be happy to help you.
           </p>
         </div>
-        <div class="right-content">
-          <div class="input-form">
+        <div class="right-content get_started">
+          <div class="input-form column-form">
             <input
               type="email"
-              name="email"
-              placeholder="Enter your email"
+              name="email_getStarted"
+              placeholder="email@example.com"
               aria-label="Email input"
             />
-            <button class="btn btn-blue">Get Started</button>
+            <button class="btn btn-blue">Get Started For Free</button>
           </div>
         </div>
       </div>
     </div>
 
     <footer>
-      <p class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">NI1GHTMARE</a>.
-      </p>
+      <div class="logo">
+        <a href="#"><img src="images/logo.svg" alt="Fylo logo" /></a>
+      </div>
+
+      <div class="footer-col">
+        <div class="footer_option">
+          <li>
+            <img src="images/icon-phone.svg" alt="phone" />
+            Phone: +1-543-123-4567
+          </li>
+          <li>
+            <img src="images/icon-email.svg" alt="phone" />
+            example@fylo.com
+          </li>
+        </div>
+
+        <div class="footer_option about_us">
+          <li>About Us</li>
+          <li>Jobs</li>
+          <li>Press</li>
+          <li>Blog</li>
+        </div>
+
+        <div class="footer_option contact_us">
+          <li>Contact Us</li>
+          <li>Terms Privacy</li>
+        </div>
+
+        <div class="footer_option socials">
+          <div class="social-icon">
+            <i class="fab fa-facebook-f"></i>
+          </div>
+          <div class="social-icon">
+            <i class="fab fa-twitter"></i>
+          </div>
+          <div class="social-icon">
+            <i class="fab fa-instagram"></i>
+          </div>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
+
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+:root {
+  --Very-Dark-Blue: hsl(243, 87%, 12%);
+  --Desaturated-Blue: hsl(238, 22%, 44%);
+  --Bright-Blue: hsl(224, 93%, 58%);
+  --Moderate-Cyan: hsl(170, 45%, 43%);
+  --Light-Grayish-Blue: hsl(240, 75%, 98%);
+  --Light-Gray: hsl(0, 0%, 75%);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  color: var(--Very-Dark-Blue);
+}
+
+.container {
+  display: inherit;
+  flex-direction: column;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2em 1em;
+}
+
+.logo img {
+  width: 6.5rem;
+  /* border: 1px solid darkcyan; */
+}
+
+h1,
+p {
+  border: 1px solid lawngreen;
+}
+.menu {
+  font-family: "Raleway", sans-serif;
+  /* margin-right: 1.5em; */
+  /* border: 1px solid red; */
+}
+
+.menu a {
+  /* padding: 0 2em 0 2em; */
+  padding: 0 0 0 0.5em;
+  text-decoration: none;
+  color: inherit;
+  /* border: 1px solid blue; */
+}
+
+.menu a:hover {
+  font-weight: bold;
+}
+
+.content {
+  display: flex;
+
+  flex-direction: column-reverse;
+  /* padding: 2em 4.5em 5em 4.5em; */
+  padding: 2em 2em 5em 2em;
+  border: 1px solid fuchsia;
+}
+
+.left-content {
+  display: inherit;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  border: 1px solid blue;
+}
+
+.left-content h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5em;
+  font-weight: 700;
+  line-height: 1.5em;
+  /* border: 1px solid darkcyan; */
+}
+
+.input-form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  border: 1px solid red;
+}
+
+.input-form > input {
+  padding: 1em 2em;
+  border-radius: 3px;
+  /* width: 16em; */
+  margin-bottom: 1em;
+  border: 1px solid hsl(238, 22%, 44%);
+}
+
+input::placeholder {
+  color: var(--Light-Gray);
+}
+
+.btn {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  /* width: 16em; */
+  height: 3em;
+  border-radius: 3px;
+  background-color: var(--Bright-Blue);
+  color: white;
+  border: none;
+  box-shadow: 0px 3px 10px 1px hsl(0, 0%, 75%);
+}
+
+.right-content {
+  display: inherit;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  flex: 50%;
+  /* justify-content: center; */
+  border: 1px solid darkcyan;
+}
+
+.right-content > img {
+  max-width: 100%;
+  margin: 70px auto;
+  border: 1px solid red;
+}
+
+.curve {
+  background: url("images/bg-curve-mobile.svg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.content-shadow {
+  background-color: var(--Light-Grayish-Blue);
+}
+
+.content-shadow p {
+  text-align: initial;
+}
+
+.content-shadow .left-content {
+  align-items: center;
+}
+
+.testimonial-card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 80%;
+  background-color: white;
+  margin-top: 3em;
+  border-radius: 5px;
+  padding: 1.5em 1em;
+  box-shadow: 0px 0px 10px 8px hsl(0, 0%, 75%, 0.3);
+  /* border: 1px solid red; */
+}
+
+.testimonial-card > img {
+  height: 1em;
+  align-self: flex-start;
+  /* border: 1px solid darkcyan; */
+}
+
+.testimonial-card p {
+  font-size: 11px;
+}
+
+.profile {
+  display: inherit;
+  /* border: 1px solid darkcyan; */
+}
+
+.avatar {
+  height: 2.5em;
+  width: 2.5em;
+  border-radius: 150px;
+  margin-right: 20px;
+  /* border: 1px solid red; */
+}
+
+.profile-data {
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  flex-direction: column;
+  text-align: initial;
+  /* border: 1px solid grey; */
+}
+
+.profile-name {
+  font-weight: bold;
+  font-size: 11px;
+  /* border: 1px solid grey; */
+}
+
+.profile-company {
+  font-size: 10px;
+  /* border: 1px solid grey; */
+}
+
+.early-access {
+  flex-direction: column;
+  background-color: var(--Desaturated-Blue);
+  color: white;
+}
+
+.column-form {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.column-form > .btn {
+  /* margin-top: 1.5em; */
+  /* padding: 1em 2em; */
+  box-shadow: 0px 2px 2px 0px hsla(243, 87%, 12%, 0.2);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  padding: 5em 4.5em 0 4.5em;
+  background-color: var(--Very-Dark-Blue);
+  color: white;
+  /* border: 2px solid orange; */
+  /* background-color: rgba(185, 182, 211, 0.4); */
+}
+
+footer > .logo {
+  filter: brightness(0) invert(1);
+  /* border: 1px solid orange; */
+  margin-bottom: 2em;
+}
+
+footer .logo img {
+  width: initial;
+}
+
+.footer-col {
+  /* display: flex;
+  justify-content: space-between; */
+  /* border: 1px solid orange; */
+}
+
+.footer_option {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin-bottom: 2em;
+  /* border: 1px dotted orange; */
+}
+
+.footer_option > li {
+  margin-bottom: 1em;
+}
+
+li img {
+  margin-right: 0.5em;
+}
+
+.socials {
+  flex-direction: row;
+  justify-content: center;
+}
+
+.social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f6f6fe;
+  border-radius: 50px;
+  width: 2em;
+  margin: 0 1em;
+  height: 2em;
+  cursor: pointer;
+}
+
+.social-icon:hover {
+  background-color: white;
+}
+
+@media screen and (min-width: 500px) {
+  .navbar {
+    padding: 2em 2em 1em 2em;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1100px) {
+  .content {
+    flex-direction: initial;
+  }
+
+  .menu {
+    margin-right: 1.5em;
+  }
+
+  .menu a {
+    padding: 0 2em 0 2em;
+  }
+
+  .right-content {
+    flex: initial;
+  }
+
+  .right-content > img {
+    max-width: 85%;
+    margin: 70px auto;
+  }
+
+  .early-access {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .left-content,
+  .right-content {
+    text-align: initial;
+  }
+
+  .content-shadow .left-content {
+    align-items: initial;
+  }
+
+  .input-form {
+    flex-direction: initial;
+    /* justify-content: space-between; */
+  }
+
+  .input-form > input {
+    width: 16em;
+  }
+
+  .btn {
+    width: 16em;
+  }
+
+  .testimonial-card {
+    width: 70%;
+  }
+
+  .testimonial-card p,
+  .profile-name,
+  .profile-company {
+    font-size: initial;
+  }
+
+  .early-access {
+    flex-direction: initial;
+  }
+  
+  
+  .column-form {
+    flex-direction: column;
+  }
+
+  .column-form > input {
+    width: calc(16em * 2);
+  }
+  
+
+  .early-access .right-content {
+    flex: 140%;
+  }
+
+  .right-content {
+    flex: 50%;
+  }
+
+  .footer-col {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .content {
+    flex-direction: initial;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -256,12 +698,11 @@ body {
 .container {
   display: inherit;
   flex-direction: column;
-  border: 2px dotted orange;
+  /* border: 2px dotted orange; */
 }
 
 .navbar {
   display: flex;
-  flex: 1;
   align-items: center;
   justify-content: space-between;
   padding: 2em 2em 1em 2em;
@@ -285,19 +726,21 @@ body {
   /* border: 1px solid blue; */
 }
 
+.menu a:hover {
+  font-weight: bold;
+}
+
 .content {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
   padding: 2em 4.5em 5em 4.5em;
-  border: 1px solid fuchsia;
+  /* border: 1px solid fuchsia; */
 }
 
 .left-content {
   display: inherit;
   flex-direction: column;
   justify-content: center;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 
 .left-content > h1 {
@@ -307,9 +750,9 @@ body {
   /* border: 1px solid darkcyan; */
 }
 
-h1, p {
+/* h1, p {
   border: 1px solid lawngreen;
-}
+} */
 
 .left-content > a {
   display: flex;
@@ -325,7 +768,7 @@ h1, p {
 .input-form {
   display: flex;
   justify-content: space-between;
-  /* border: 1px solid darkcyan; */
+  /* border: 1px solid lawngreen; */
 }
 
 .input-form > input {
@@ -335,8 +778,13 @@ h1, p {
   border: 1px solid hsl(238, 22%, 44%);
 }
 
+input::placeholder {
+  color: var(--Light-Gray);
+}
+
 .btn {
   font-family: "Raleway", sans-serif;
+  font-weight: 700;
   width: 16em;
   border-radius: 3px;
   background-color: var(--Bright-Blue);
@@ -345,11 +793,15 @@ h1, p {
   box-shadow: 0px 3px 10px 1px hsl(0, 0%, 75%);
 }
 
+.btn:hover {
+  cursor: pointer;
+}
+
 .right-content {
   display: flex;
   flex: 50%;
   justify-content: center;
-  border: 1px solid darkcyan;
+  /* border: 1px solid darkcyan; */
 }
 
 .right-content > img {
@@ -365,10 +817,7 @@ h1, p {
 }
 
 .content-shadow {
-  /* background: url("images/bg-curve-desktop.svg") no-repeat; */
   background-color: var(--Light-Grayish-Blue);
-  background-size: cover;
-  background-position: center;
 }
 
 .testimonial-card {
@@ -427,20 +876,83 @@ h1, p {
   color: white;
 }
 
+.get_started {
+  justify-content: flex-end;
+}
+
+.column-form {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.column-form > input {
+  width: calc(16em * 2);
+}
+
+.column-form > .btn {
+  margin-top: 1.5em;
+  padding: 1em 2em;
+  box-shadow: 0px 2px 2px 0px hsla(243, 87%, 12%, 0.2);
+}
 
 footer {
-  padding: 5px;
-  background-color: rgba(185, 182, 211, 0.4);
+  display: flex;
+  flex-direction: column;
+  padding: 5em 4.5em 5em 4.5em;
+  background-color: var(--Very-Dark-Blue);
+  color: white;
+  /* border: 2px solid orange; */
+  /* background-color: rgba(185, 182, 211, 0.4); */
 }
 
-.attribution {
-  font-size: 12px;
-  text-align: center;
+footer > figure {
+  margin: 0;
+  margin-bottom: 1em;
 }
 
-.attribution a {
-  color: hsl(228, 45%, 44%);
+footer > .logo {
+  filter: brightness(0) invert(1);
+  /* border: 1px solid orange; */
 }
+
+.footer-col {
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid orange; */
+}
+
+.footer_option {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  /* border: 1px dotted orange; */
+}
+
+.footer_option > li {
+  margin-bottom: 0.5em;
+}
+
+.socials {
+  flex-direction: row;
+}
+
+.social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f6f6fe;
+  border-radius: 50px;
+  width: 2em;
+  margin: 0 1em;
+  height: 2em;
+  cursor: pointer;
+}
+
+.social-icon:hover {
+  background-color: white;
+}
+
+
 
 
 
