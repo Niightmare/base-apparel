@@ -400,9 +400,12 @@ input::placeholder {
 }
 
 .curve {
-  background: url("images/bg-curve-mobile.svg") no-repeat;
+  z-index: -1;
+  background: url(images/bg-curve-mobile.svg) no-repeat;
   background-size: cover;
+  height: 11em;
   background-position: center;
+  margin-bottom: -6em;
 }
 
 .content-shadow {
